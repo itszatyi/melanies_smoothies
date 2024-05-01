@@ -7,7 +7,7 @@ import requests, pandas
 # Write directly to the app
 st.title(":cup_with_straw: Order your custom smoothie! :cup_with_straw:")
 st.write(
-    """Pick some delicious fruits - up to 5 ingredients!
+    """Pick your favourite fruits below!
     """
 )
 cnx = st.connection("snowflake")
