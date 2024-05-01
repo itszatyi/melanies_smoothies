@@ -5,9 +5,9 @@ from snowflake.snowpark.functions import col
 import requests, pandas
 
 # Write directly to the app
-st.title(":cup_with_straw: Customize Your Smoothie! :cup_with_straw:")
+st.title(":cup_with_straw: Order your custom smoothie! :cup_with_straw:")
 st.write(
-    """Choose the fruits you want in your custom Smoothie!
+    """Pick some delicious fruits - up to 5 ingredients!
     """
 )
 cnx = st.connection("snowflake")
