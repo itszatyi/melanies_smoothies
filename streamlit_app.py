@@ -47,7 +47,7 @@ if ingredients_list:
         st.write = fruityvice_response.json()
        # else: 
         #    st.write('This fruit is not in Fruity Vice database.')
-    
+
     st.write('You have chosen ' +ingredients_string+ 'to be in your smoothie!')
     #writing ingredients list
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients,name_on_order,order_filled)
