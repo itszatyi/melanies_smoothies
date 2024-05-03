@@ -41,8 +41,8 @@ if ingredients_list:
         
         st.subheader(fruit_chosen + ' Nutrition Information')
        # if fruityvice_response:
-            fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + search_on)
-            fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+        fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + search_on)
+        fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
        # else: 
         #    st.write('This fruit is not in Fruity Vice database.')
     
