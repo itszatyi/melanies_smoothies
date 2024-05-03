@@ -43,6 +43,8 @@ if ingredients_list:
        # if fruityvice_response:
         fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + search_on)
         fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+        #testing how result will be printed
+        st.write = fruityvice_response.json()
        # else: 
         #    st.write('This fruit is not in Fruity Vice database.')
     
