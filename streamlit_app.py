@@ -6,7 +6,7 @@ import requests, pandas as pd
 
 # Write directly to the app
 st.title(":cup_with_straw: Order your custom smoothie! :cup_with_straw:")
-st.write("""Pick your favourite fruits below!""")
+st.write("Pick your favourite fruits below!")
 
 cnx = st.connection("snowflake")
 session = cnx.session()
