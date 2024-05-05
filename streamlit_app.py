@@ -44,7 +44,7 @@ if ingredients_list:
         
         url  = "https://fruityvice.com/api/fruit/all"
         r = requests.get(url)
-        print(r.status_code)
+        st.write(r.status_code)
 
     
     st.write('You have chosen ' +ingredients_string+ 'to be in your smoothie!')
