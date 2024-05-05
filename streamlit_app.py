@@ -41,6 +41,10 @@ if ingredients_list:
         st.subheader(fruit_chosen + ' Nutrition Information')
         fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + search_on)
         fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+        
+        url  = "https://fruityvice.com/api/fruit/all"
+        r = requests.get(url)
+        print(r.status_code)
 
     
     st.write('You have chosen ' +ingredients_string+ 'to be in your smoothie!')
